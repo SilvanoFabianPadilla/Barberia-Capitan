@@ -1,0 +1,172 @@
+body {
+    background: #D3CBB8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navegacion */
+header {
+    background-color: #6D6027;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #D3CBB8;
+    text-decoration: underline;
+}
+
+/* Contacto */
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #6D6027;
+    border-radius: 31px 31px 31px 31px;
+    -moz-border-radius: 31px 31px 31px 31px;
+    -webkit-border-radius: 31px 31px 31px 31px;
+    border: 10px none;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #1E8449;
+    transform: scale(1.2) rotate(4deg);
+}
+
+/* Tabla */
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #6D6027;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 2px solid #000000;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+/* copyright */
+footer {
+    background: url(../img/bg.jpg);
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* responsiva */
+@media (max-width: 950px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .caja {
+        width: auto;
+    }
+
+    main {
+        width: 100%;
+        margin: 0 0 0 30px;
+    }
+
+    .input-padron {
+        width: 70%;
+    }
+
+    .enviar {
+        margin: 10px 0 0 0;
+    }
+
+    .enviar:hover {
+        background: #1E8449;
+        transform: none;
+    }
+}
+
+@media (max-width: 380px) {
+    table {
+        margin: 0 0 20px 0;
+    }
+
+    td,
+    th {
+        font-size: 14px;
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+    .checkbox{
+        width: 90%;
+    }
+}

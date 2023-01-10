@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Barbería Alura</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navegacion-->
+    <header>
+        <div class="caja">
+            <h1><img src="img/logo.png" alt="Logo"></h1>
+            <nav>
+                <ul class="navegacion">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contacto -->
+    <main>
+        <form>
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required placeholder="Nombre(s) Apellidos">
+
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(55) 5555 5555">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                        id="radio-email">Email</label>
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono">Teléfono</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsApp" id="radio-whatsapp"
+                        checked>WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En cuál horario prefiere ser atendido?</legend>
+                <select>
+                    <option>Horario</option>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Baebería
+                Alura</label>
+
+            <input class="enviar" type="submit" value="Enviar Formulario">
+        </form>
+
+        <!-- Tabla -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Días</th>
+                    <th>Mañana</th>
+                    <th>Tarde</th>
+                    <th>Noche</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08:00 - 11:00</td>
+                    <td>13:00 - 17:00</td>
+                    <td>18:00 - 21:00</td>
+                </tr>
+
+                <tr>
+                    <td>Martes</td>
+                    <td>08:00 - 11:00</td>
+                    <td>13:00 - 17:00</td>
+                    <td>18:00 - 21:00</td>
+                </tr>
+
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08:00 - 11:00</td>
+                    <td>13:00 - 17:00</td>
+                    <td>18:00 - 21:00</td>
+                </tr>
+
+                <tr>
+                    <td>Jueves</td>
+                    <td>08:00 - 11:00</td>
+                    <td>13:00 - 17:00</td>
+                    <td>18:00 - 21:00</td>
+                </tr>
+
+                <tr>
+                    <td>Viernes</td>
+                    <td>08:00 - 11:00</td>
+                    <td>13:00 - 17:00</td>
+                    <td>Cerrado</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- copyright -->
+    <footer>
+        <img src="img/logo-blanco.png" alt="Logo Blanco">
+        <p class="copyright">&copy Copyright Baebería Alura - 2022</p>
+    </footer>
+</body>
+
+</html>

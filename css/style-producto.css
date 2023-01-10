@@ -1,0 +1,142 @@
+body {
+    background: #D3CBB8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navegacion */
+header {
+    background-color: #6D6027;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #D3CBB8;
+    text-decoration: underline;
+}
+
+/* Producto */
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border: 10px double #000000;
+}
+
+.productos li:hover {
+    border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border: 10px double #6D6027;
+}
+
+.productos li:active {
+    border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border: 10px double #FFFFFF;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2 {
+    font-size: 33px;
+}
+
+.productos img {
+    width: 220px;
+}
+
+.productos-descripcion {
+    font-size: 18px;
+}
+
+.productos-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* copyright */
+footer {
+    background: url(../img/bg.jpg);
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* responsiva */
+@media (max-width: 950px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .caja {
+        width: auto;
+    }
+
+    .productos {
+        width: 100%;
+    }
+
+    .productos li{
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin: 20px 0 20px 0;
+        padding: 30px 20px;
+    }
+
+}
