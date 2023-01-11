@@ -132,7 +132,12 @@ footer {
     }
 
     .productos {
-        width: 100%;
+        width: auto;
+        padding: 10px 0 10px 50px;
+    }
+
+    .productos img {
+        width: 200px;
     }
 
     .productos li {
