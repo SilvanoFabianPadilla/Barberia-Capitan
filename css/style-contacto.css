@@ -11,13 +11,14 @@ header {
 
 .caja {
     width: 940px;
+    height: 150px;
     position: relative;
     margin: 0 auto;
 }
 
 nav {
     position: absolute;
-    top: 110px;
+    top: 80px;
     right: 0px;
 }
 
@@ -27,6 +28,7 @@ nav li {
 }
 
 nav a {
+    font-family: 'Texturina', serif;
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
@@ -46,6 +48,7 @@ main {
 }
 
 form {
+    font-family: 'Texturina', serif;
     margin: 40px 0;
 }
 
@@ -68,9 +71,10 @@ form legend {
 }
 
 .enviar {
+    font-family: 'Texturina', serif;
     width: 40%;
     padding: 15px 0;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #FFFFFF;
     background: #6D6027;
@@ -133,6 +137,7 @@ footer {
 
     .caja {
         width: auto;
+        height: 200px;
     }
 
     main {
@@ -166,7 +171,12 @@ footer {
         text-align: center;
     }
 
-    .checkbox{
+    .checkbox {
         width: 90%;
+    }
+
+    .enviar {
+        margin: 10px 0 0 0;
+        width: 80%;
     }
 }

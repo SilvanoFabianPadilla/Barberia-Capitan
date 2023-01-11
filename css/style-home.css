@@ -11,13 +11,14 @@ header {
 
 .caja {
     width: 940px;
+    height: 150px;
     position: relative;
     margin: 0 auto;
 }
 
 nav {
     position: absolute;
-    top: 110px;
+    top: 80px;
     right: 0px;
 }
 
@@ -27,6 +28,7 @@ nav li {
 }
 
 nav a {
+    font-family: 'Texturina', serif;
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
@@ -50,6 +52,7 @@ nav a:hover {
 }
 
 .titulo-principal {
+    font-family: 'Texturina', serif;
     background: #6D6027;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);
@@ -68,12 +71,12 @@ nav a:hover {
 }
 
 .titulo {
+    font-family: 'Texturina', serif;
     font-size: 30px;
     text-align: center;
     padding: 5px;
     margin: 20px;
     clear: left;
-
 }
 
 .utensilios {
@@ -185,7 +188,11 @@ footer {
         font-size: 10px;
     }
 
-    .caja,
+    .caja {
+        width: auto;
+        height: 200px;
+    }
+
     .principal,
     .mapa,
     .contenido-diferenciales,
@@ -202,6 +209,7 @@ footer {
         width: 100%;
     }
 }
+
 @media (max-width: 320px) {
     .titulo-principal {
         font-size: 50px
